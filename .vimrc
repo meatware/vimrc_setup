@@ -129,3 +129,6 @@ function RangerExplorer()
     redraw!
 endfun
 map <Leader>r :call RangerExplorer()<CR>
+
+" recognise *access.log file extension for ~/.vim/syntax
+au BufRead *access.log* setf httplog
